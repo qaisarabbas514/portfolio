@@ -15,9 +15,9 @@ const STATS = [
 ];
 
 const INFO = [
-  { icon: FiMapPin, label: "Location", value: "Pakistan 🇵🇰" },
-  { icon: FiMail, label: "Email", value: "hello@qaisar.dev" },
-  { icon: FiCalendar, label: "Experience", value: "3+ Years" },
+  { icon: FiMapPin, label: "Location", value: "Lahore, Punjab, Pakistan 🇵🇰" },
+  { icon: FiMail, label: "Email", value: "qaisar.abbas6331@gmail.com" },
+  { icon: FiCalendar, label: "Experience", value: "4+ Years" },
   { icon: FiBriefcase, label: "Availability", value: "Open to Work ✅" },
 ];
 

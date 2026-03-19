@@ -30,7 +30,7 @@ const CONTACT_INFO = [
   {
     icon: FiMapPin,
     label: "Location",
-    value: "Punjab, Pakistan 🇵🇰",
+    value: "Lahore, Punjab, Pakistan 🇵🇰",
     href: "#",
   },
   {
