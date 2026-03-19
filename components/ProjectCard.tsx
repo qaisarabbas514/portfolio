@@ -5,8 +5,8 @@ import Image from "next/image";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 
 export interface Project {
-  image?: string;        // path inside /public, e.g. "/images/projects/ecommerce.jpg"
-  emoji: string;         // shown as fallback when no image
+  image?: string; // path inside /public, e.g. "/images/projects/ecommerce.jpg"
+  emoji: string; // shown as fallback when no image
   title: string;
   description: string;
   tech: string[];

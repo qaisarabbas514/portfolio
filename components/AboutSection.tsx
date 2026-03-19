@@ -3,6 +3,7 @@
 /**
  * AboutSection – professional summary, stats, and profile image.
  */
+import Image from "next/image";
 import SectionWrapper from "./SectionWrapper";
 import { FiMapPin, FiMail, FiCalendar, FiBriefcase } from "react-icons/fi";
 
@@ -31,7 +32,16 @@ export default function AboutSection() {
       <div className="row g-5 align-items-center">
         {/* Profile image */}
         <div className="col-12 col-lg-4 text-center">
-          <div className="profile-image-box fade-in-up">👨‍💻</div>
+          <div className="profile-image-box fade-in-up">
+            <Image
+              src="/images/about-image.JPG"
+              alt="Qaisar – Full-Stack Developer"
+              fill
+              sizes="(max-width: 768px) 100vw, 360px"
+              style={{ objectFit: "cover", borderRadius: "var(--radius)" }}
+              priority
+            />
+          </div>
         </div>
 
         {/* Text & info */}
