@@ -1,10 +1,12 @@
 /**
  * ProjectCard – reusable card for the Projects section.
  */
+import Image from "next/image";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 
 export interface Project {
-  emoji: string;
+  image?: string;        // path inside /public, e.g. "/images/projects/ecommerce.jpg"
+  emoji: string;         // shown as fallback when no image
   title: string;
   description: string;
   tech: string[];
@@ -16,14 +18,24 @@ export interface Project {
 export default function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="project-card">
-      {/* Thumbnail */}
+      {/* Thumbnail – real image or gradient+emoji fallback */}
       <div
         className="project-card-thumb"
-        style={{ background: project.gradient }}
+        style={project.image ? {} : { background: project.gradient }}
       >
-        <span role="img" aria-label={project.title}>
-          {project.emoji}
-        </span>
+        {project.image ? (
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            sizes="(max-width: 768px) 100vw, 33vw"
+            style={{ objectFit: "cover" }}
+          />
+        ) : (
+          <span role="img" aria-label={project.title}>
+            {project.emoji}
+          </span>
+        )}
       </div>
 
       {/* Body */}

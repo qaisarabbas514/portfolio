@@ -9,6 +9,7 @@ import ProjectCard, { type Project } from "./ProjectCard";
 
 const PROJECTS: Project[] = [
   {
+    image: "/images/projects/ecommerce.jpg",
     emoji: "🛒",
     title: "E-Commerce Platform",
     description:
@@ -19,6 +20,7 @@ const PROJECTS: Project[] = [
     githubUrl: "#",
   },
   {
+    image: "/images/projects/analytics.jpg",
     emoji: "📊",
     title: "Analytics Dashboard",
     description:
@@ -29,6 +31,7 @@ const PROJECTS: Project[] = [
     githubUrl: "#",
   },
   {
+    image: "/images/projects/chat.jpg",
     emoji: "💬",
     title: "Real-Time Chat App",
     description:
@@ -39,6 +42,7 @@ const PROJECTS: Project[] = [
     githubUrl: "#",
   },
   {
+    image: "/images/projects/design.jpg",
     emoji: "🎨",
     title: "Design System",
     description:
@@ -49,6 +53,7 @@ const PROJECTS: Project[] = [
     githubUrl: "#",
   },
   {
+    image: "/images/projects/healthcare.jpg",
     emoji: "🏥",
     title: "Healthcare Portal",
     description:
@@ -59,6 +64,7 @@ const PROJECTS: Project[] = [
     githubUrl: "#",
   },
   {
+    image: "/images/projects/portfolio.jpg",
     emoji: "📱",
     title: "Portfolio CMS",
     description:

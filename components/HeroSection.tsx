@@ -5,7 +5,7 @@
  * CTA buttons, social links, and a floating avatar.
  */
 import { useState, useEffect } from "react";
-import Link from "next/link";
+import Image from "next/image";
 import {
   FiGithub,
   FiLinkedin,
@@ -147,7 +147,16 @@ export default function HeroSection() {
           {/* Right – avatar */}
           <div className="col-12 col-lg-6 order-1 order-lg-2 d-flex justify-content-center">
             <div className="hero-image-wrapper">
-              <div className="hero-avatar">👨‍💻</div>
+              <div className="hero-avatar">
+                <Image
+                  src="/images/profile.jpg"
+                  alt="Qaisar – Full-Stack Developer"
+                  fill
+                  sizes="(max-width: 768px) 240px, 340px"
+                  style={{ objectFit: "cover", borderRadius: "50%" }}
+                  priority
+                />
+              </div>
 
               {/* Floating info cards */}
               <div className="floating-card card-1">

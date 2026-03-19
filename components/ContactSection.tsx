@@ -24,15 +24,20 @@ const CONTACT_INFO = [
   {
     icon: FiMail,
     label: "Email",
-    value: "hello@qaisar.dev",
-    href: "mailto:hello@qaisar.dev",
+    value: "qaisar.abbas6331@gmail.com",
+    href: "mailto:qaisar.abbas6331@gmail.com",
   },
-  { icon: FiMapPin, label: "Location", value: "Pakistan 🇵🇰", href: "#" },
+  {
+    icon: FiMapPin,
+    label: "Location",
+    value: "Punjab, Pakistan 🇵🇰",
+    href: "#",
+  },
   {
     icon: FiPhone,
     label: "Phone",
-    value: "+92 300 000 0000",
-    href: "tel:+923000000000",
+    value: "+92 3466331311",
+    href: "tel:+923466331311",
   },
 ];
 
