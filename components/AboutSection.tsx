@@ -8,9 +8,9 @@ import SectionWrapper from "./SectionWrapper";
 import { FiMapPin, FiMail, FiCalendar, FiBriefcase } from "react-icons/fi";
 
 const STATS = [
-  { number: "3+", label: "Years Experience" },
-  { number: "20+", label: "Projects Completed" },
-  { number: "10+", label: "Happy Clients" },
+  { number: "4+", label: "Years Experience" },
+  { number: "10+", label: "Projects Completed" },
+  { number: "5+", label: "Happy Clients" },
   { number: "5+", label: "Tech Stacks" },
 ];
 
@@ -51,8 +51,8 @@ export default function AboutSection() {
               className="mb-3"
               style={{ fontSize: "1.6rem", fontWeight: 800 }}
             >
-              Full-Stack Developer &amp;{" "}
-              <span className="text-gradient">UI/UX Enthusiast</span>
+              Front-End Developer &amp;{" "}
+              <span className="text-gradient">API Integration Expert</span>
             </h3>
             <p
               style={{
@@ -61,11 +61,12 @@ export default function AboutSection() {
                 marginBottom: "1.25rem",
               }}
             >
-              I&apos;m a passionate Full-Stack Developer with 3+ years of
-              hands-on experience building modern, scalable web applications. I
-              specialise in React, Next.js, Angular, and Node.js, with a strong
-              focus on clean architecture, performance, and exceptional user
-              experiences.
+              I&apos;m a Front-End Developer and API Integration specialist with
+              4+ years of experience building scalable, high-performance web
+              applications. My primary expertise is React.js (TSX) for complete
+              front-end development, complemented by Angular and Next.js for
+              UI-layer work, with a strong command of TypeScript, JavaScript
+              (ES6+), Tailwind CSS, and Bootstrap.
             </p>
             <p
               style={{
@@ -74,10 +75,11 @@ export default function AboutSection() {
                 marginBottom: "2rem",
               }}
             >
-              I love turning complex problems into simple, beautiful, and
-              intuitive solutions. When I&apos;m not coding, you&apos;ll find me
-              exploring new technologies, contributing to open source, or
-              mentoring junior developers.
+              I love translating complex requirements into interactive,
+              pixel-perfect UI solutions. I&apos;m passionate about reusable
+              component architecture, responsive design, cross-browser
+              compatibility, and collaborating in agile environments to deliver
+              optimised, maintainable code.
             </p>
           </div>
 

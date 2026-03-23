@@ -4,13 +4,16 @@
  * Footer component
  */
 import Link from "next/link";
-import { FiGithub, FiLinkedin, FiTwitter, FiMail } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
 const SOCIALS = [
-  { icon: FiGithub, href: "https://github.com", label: "GitHub" },
-  { icon: FiLinkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: FiTwitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: FiMail, href: "mailto:hello@qaisar.dev", label: "Email" },
+  { icon: FiGithub, href: "https://github.com/qaisar-abbas", label: "GitHub" },
+  {
+    icon: FiLinkedin,
+    href: "https://www.linkedin.com/in/qaisar-abbas-038446249/",
+    label: "LinkedIn",
+  },
+  { icon: FiMail, href: "mailto:qaisar.abbas6331@gmail.com", label: "Email" },
 ];
 
 export default function Footer() {

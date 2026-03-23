@@ -9,7 +9,6 @@ import Image from "next/image";
 import {
   FiGithub,
   FiLinkedin,
-  FiTwitter,
   FiDownload,
   FiArrowDown,
   FiCode,
@@ -17,11 +16,11 @@ import {
 } from "react-icons/fi";
 
 const ROLES = [
-  "Full-Stack Developer",
-  "React & Next.js Engineer",
-  "UI/UX Enthusiast",
-  "Angular Developer",
+  "Front-End Developer",
+  "React.js / TSX Specialist",
+  "Angular & Next.js UI Developer",
   "API Integration Expert",
+  "TypeScript Developer",
 ];
 
 export default function HeroSection() {
@@ -92,9 +91,9 @@ export default function HeroSection() {
             </p>
 
             <p className="hero-intro">
-              I craft performant, accessible, and visually stunning web
-              experiences. Passionate about clean code, great UX, and turning
-              ideas into products that people love to use.
+              I build scalable, high-performance web applications with React.js,
+              Angular, and Next.js. Passionate about REST API integration,
+              pixel-perfect UIs, and delivering exceptional user experiences.
             </p>
 
             {/* CTA buttons */}
@@ -118,16 +117,15 @@ export default function HeroSection() {
             {/* Social icons */}
             <div className="hero-socials">
               {[
-                { icon: FiGithub, href: "https://github.com", label: "GitHub" },
                 {
-                  icon: FiLinkedin,
-                  href: "https://linkedin.com",
-                  label: "LinkedIn",
+                  icon: FiGithub,
+                  href: "https://github.com/qaisar-abbas",
+                  label: "GitHub",
                 },
                 {
-                  icon: FiTwitter,
-                  href: "https://twitter.com",
-                  label: "Twitter",
+                  icon: FiLinkedin,
+                  href: "https://www.linkedin.com/in/qaisar-abbas-038446249/",
+                  label: "LinkedIn",
                 },
               ].map(({ icon: Icon, href, label }) => (
                 <a
@@ -161,11 +159,11 @@ export default function HeroSection() {
               {/* Floating info cards */}
               <div className="floating-card card-1">
                 <FiCode size={16} style={{ color: "var(--primary)" }} />
-                3+ Years Experience
+                4+ Years Experience
               </div>
               <div className="floating-card card-2">
                 <FiZap size={16} style={{ color: "var(--accent)" }} />
-                20+ Projects Shipped
+                10+ Projects Shipped
               </div>
             </div>
           </div>

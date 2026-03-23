@@ -17,41 +17,30 @@ interface Experience {
 
 const EXPERIENCES: Experience[] = [
   {
-    period: "Jan 2024 – Present",
-    role: "Senior Frontend Developer",
-    company: "TechVentures Ltd.",
-    location: "Remote",
+    period: "Feb 2023 – Present",
+    role: "Front-End Developer",
+    company: "Aquila 360 Pvt Ltd",
+    location: "Lahore, Pakistan",
     description:
-      "Leading the frontend architecture of a SaaS platform serving 10k+ users. Migrated legacy Angular codebase to Next.js 14, reducing load times by 40%. Mentoring a team of 4 junior developers and establishing code review best practices.",
-    tech: ["Next.js", "TypeScript", "GraphQL", "Tailwind", "Jest"],
+      "Developed and delivered multiple client products using React.js (TSX) as the primary framework for complete front-end development: CCF (Childcare), Jino (UAE Car Wash), Employee App, Dividely (Finance), and Healthcare System. Also contributed Angular UI development for the LoadGate (Construction Logistics) platform. All projects involved RESTful API integration, Tailwind CSS, and cross-functional team collaboration.",
+    tech: [
+      "React.js",
+      "Angular",
+      "TypeScript",
+      "Tailwind CSS",
+      "Bootstrap 5",
+      "REST APIs",
+    ],
     current: true,
   },
   {
-    period: "Mar 2022 – Dec 2023",
-    role: "Full-Stack Developer",
-    company: "Digital Craft Agency",
+    period: "Jan 2022 – Jan 2023",
+    role: "Front-End Developer",
+    company: "WD Logics Pvt Ltd",
     location: "Lahore, Pakistan",
     description:
-      "Developed and maintained 12+ client web applications. Built a real-time notification system, integrated Stripe payments, and designed REST APIs consumed by mobile apps. Worked closely with designers to implement pixel-perfect UIs.",
-    tech: ["React", "Node.js", "MongoDB", "Express", "Bootstrap"],
-  },
-  {
-    period: "Jun 2021 – Feb 2022",
-    role: "Frontend Developer (Internship → Full-time)",
-    company: "StartupHub Pakistan",
-    location: "Karachi, Pakistan",
-    description:
-      "Joined as an intern and was converted to a full-time role within 3 months. Built reusable component libraries, implemented Angular modules, and improved app accessibility (WCAG AA compliance).",
-    tech: ["Angular", "TypeScript", "SCSS", "Bootstrap", "Figma"],
-  },
-  {
-    period: "Jan 2021 – May 2021",
-    role: "Freelance Web Developer",
-    company: "Self-employed",
-    location: "Remote",
-    description:
-      "Delivered responsive landing pages, small business websites, and custom WordPress themes for international clients via Upwork and direct referrals.",
-    tech: ["HTML", "CSS", "JavaScript", "React", "WordPress"],
+      "Built responsive, scalable front-end solutions for multiple products: WD Logics IT Services Platform, Rizq (Financial Wellness Platform), Xnspy (Phone Monitoring App for Families), and Family Time (Parental Control & Digital Wellbeing App). Developed interactive UIs with React.js, jQuery, Bootstrap, and Sass/SCSS.",
+    tech: ["React.js", "jQuery", "Bootstrap 4/5", "Sass/SCSS", "JavaScript"],
   },
 ];
 

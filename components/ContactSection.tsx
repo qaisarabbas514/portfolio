@@ -50,6 +50,7 @@ export default function ContactSection() {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -57,15 +58,29 @@ export default function ContactSection() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    // Simulate async submission
-    setTimeout(() => {
-      setLoading(false);
+    setError("");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Something went wrong.");
       setSubmitted(true);
       setForm({ name: "", email: "", subject: "", message: "" });
-    }, 1500);
+    } catch (err: unknown) {
+      setError(
+        err instanceof Error
+          ? err.message
+          : "Failed to send. Please try again.",
+      );
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -209,6 +224,20 @@ export default function ContactSection() {
                     />
                   </div>
                   <div className="col-12">
+                    {error && (
+                      <div
+                        className="mb-2 p-3"
+                        style={{
+                          background: "rgba(239,68,68,0.08)",
+                          border: "1px solid rgba(239,68,68,0.3)",
+                          borderRadius: 10,
+                          color: "#f87171",
+                          fontSize: "0.875rem",
+                        }}
+                      >
+                        ⚠️ {error}
+                      </div>
+                    )}
                     <button
                       type="submit"
                       className="btn btn-gradient w-100 d-flex align-items-center justify-content-center gap-2"
