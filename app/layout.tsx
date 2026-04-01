@@ -6,7 +6,7 @@ import BootstrapClient from "@/components/BootstrapClient";
 
 /* ── SEO Metadata ─────────────────────────────────────────── */
 export const metadata: Metadata = {
-  title: "Qaisar | Full-Stack Developer Portfolio",
+  title: "Qaisar | Front-End Developer Portfolio",
   description:
     "Professional portfolio of Qaisar – a passionate Full-Stack Developer specialising in React, Next.js, Angular, and modern UI/UX design.",
   keywords: [
