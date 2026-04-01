@@ -148,7 +148,7 @@ export default function HeroSection() {
               <div className="hero-avatar">
                 <Image
                   src="/images/profile.jpg"
-                  alt="Qaisar – Full-Stack Developer"
+                  alt="Qaisar – Front-End Developer"
                   fill
                   sizes="(max-width: 768px) 240px, 340px"
                   style={{ objectFit: "cover", borderRadius: "50%" }}

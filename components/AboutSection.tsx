@@ -35,7 +35,7 @@ export default function AboutSection() {
           <div className="profile-image-box fade-in-up">
             <Image
               src="/images/about-image.JPG"
-              alt="Qaisar – Full-Stack Developer"
+              alt="Qaisar – Front-End Developer"
               fill
               sizes="(max-width: 768px) 100vw, 360px"
               style={{ objectFit: "cover", borderRadius: "var(--radius)" }}

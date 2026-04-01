@@ -8,20 +8,13 @@ import BootstrapClient from "@/components/BootstrapClient";
 export const metadata: Metadata = {
   title: "Qaisar | Front-End Developer Portfolio",
   description:
-    "Professional portfolio of Qaisar – a passionate Full-Stack Developer specialising in React, Next.js, Angular, and modern UI/UX design.",
-  keywords: [
-    "developer",
-    "portfolio",
-    "react",
-    "nextjs",
-    "frontend",
-    "fullstack",
-  ],
+    "Professional portfolio of Qaisar – a passionate Front-End Developer specialising in React, Next.js, Angular, and modern UI/UX design.",
+  keywords: ["developer", "portfolio", "react", "nextjs", "frontend"],
   authors: [{ name: "Qaisar" }],
   openGraph: {
-    title: "Qaisar | Full-Stack Developer Portfolio",
+    title: "Qaisar | Front-End Developer Portfolio",
     description:
-      "Explore projects, skills and experience of Qaisar – Full-Stack Developer.",
+      "Explore projects, skills and experience of Qaisar – Front-End Developer.",
     type: "website",
   },
 };

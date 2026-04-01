@@ -57,7 +57,7 @@ const PROJECTS: Project[] = [
     emoji: "📚",
     title: "Book Exchange Platform",
     description:
-      "Full-stack community book exchange platform (Final Year Project). Features user auth, book listings, search & filters, exchange requests, real-time messaging, wish lists, notifications, and a book review system.",
+      "Front-End community book exchange platform (Final Year Project). Features user auth, book listings, search & filters, exchange requests, real-time messaging, wish lists, notifications, and a book review system.",
     tech: [
       "React.js",
       "TypeScript",
